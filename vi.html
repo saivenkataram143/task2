@@ -1,0 +1,50 @@
+<html>
+<head></head>
+<body>
+
+
+<center>
+<video id="vid" src="video/videoplayback.mp4" autoplay controls="controls" loop muted>
+
+</video>
+
+<button type="button" name="button" onclick="pause()">PAUSE</button>
+<button type="button" name="button" onclick="play()">PLAY</button>
+  <script type="text/javascript">
+  function pause()
+{
+ var vide=document.getElementById("vid");
+
+ vide.pause();
+}
+function play()
+{
+var vide=document.getElementById("vid");
+vide.play();
+}
+</script>
+<h3>Audio Controllers</h3>
+<audio id="aid"  src="audio/kalla.mp3" autoplay controls="controls">
+
+</audio>
+<button type="button" onclick="pause1()">PAUSE</button>
+<button type="button" onclick="play1()">PLAY</button>
+
+
+<script type="text/javascript">
+function pause1()
+{
+var audio=document.getElementById("aid");
+audio.pause();
+}
+function play1()
+{
+var audio=document.getElementById("aid");
+audio.play();
+}
+</script>
+
+
+</center>
+</body>
+</html>
